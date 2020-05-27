@@ -29,3 +29,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+#登校画像フォルダを除く
+ public/uploads/*
