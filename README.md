@@ -1,6 +1,6 @@
 # README
 
-* Database設計
+## 1. Database設計
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
