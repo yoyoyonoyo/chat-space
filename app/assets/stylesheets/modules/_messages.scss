@@ -1,0 +1,5 @@
+// CSSの仕様で、paddingなどの設定を行った場合、その要素全体のサイズが大きくなってしまいます。
+// それを防ぐため、下記でbox-sizingを設定する。（defaultはcontentsーbox）
+* {
+  box-sizing: border-box;
+}
