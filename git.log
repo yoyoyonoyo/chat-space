@@ -1,0 +1,222 @@
+
+commit 24679da514791124f76670e11b36d3c49b8d8195
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Fri May 29 19:28:38 2020 +0900
+
+    modify form placeholder
+
+commit 3f1380a5fd9ad343c50d88a1696cf8631722d5d3
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Fri May 29 19:26:42 2020 +0900
+
+    Ver1.0 (update sidebar)
+
+commit 897358ec1e837f53fc453671ec8a923fe3b6eef8
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Fri May 29 19:17:07 2020 +0900
+
+    update input-form
+
+commit 7b9559f3226ae7f0f63796abdbe030945d3d15cd
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Fri May 29 15:41:29 2020 +0900
+
+    modifi tag a
+
+commit bd965de1b9f574f6909615cd5f2bcd693dbe474a
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Fri May 29 14:17:02 2020 +0900
+
+    update right_body
+
+commit 7c00b013bbf7caa3a3a4ed783c9ab61a21627bb8
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Fri May 29 14:16:00 2020 +0900
+
+    update right_body
+
+commit 7a1fe8e9b9f3be3b09d8729e2d4f0e20dc5ac366
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Fri May 29 12:38:14 2020 +0900
+
+    update side_bar,mein-chat
+
+commit a6b66794a4bed195c299160dce89822a71ce9f7b
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Fri May 29 11:20:32 2020 +0900
+
+    rename class
+
+commit 5ef52d05fe108171c5727a9fd702686afe10acb7
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Fri May 29 01:07:03 2020 +0900
+
+    rename sidebar
+
+commit 6048fc61506abff7016d56b9daa3105c9e847367
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 22:48:43 2020 +0900
+
+    Update _side_bar
+
+commit 2e80eeee98dc348ee4bc8959f29f87def9b18bb2
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 22:19:41 2020 +0900
+
+    update __side-bar__user-name
+
+commit 36b3a6eb964b372cb0c71172fd121153299d5109
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 19:14:58 2020 +0900
+
+    update messages
+
+commit ead8c8e8762d11794ffcafecf0a22782c4184d82
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 19:12:00 2020 +0900
+
+    update side_bar
+
+commit 8a55459fa8b0fdf9150dbd0f663143d95ef51d32
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 19:05:07 2020 +0900
+
+    update main_chat.haml,_side_bar_haml, messages.scss
+
+commit 23cc5d9d42d167041b710ee6b75c1e748f4f87eb
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 18:04:51 2020 +0900
+
+    change location _chat,_main.html.haml
+
+commit 57c90e55885071617f373b7751bb4e5ba7d3658c
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 18:03:12 2020 +0900
+
+    Update  index.html.haml
+
+commit ceb96a0634cdbfec96c21cb07faf7b462cce2d32
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 18:01:35 2020 +0900
+
+    update message.scss,add .haml
+
+commit 1e0be5db82752e53365c9baf219f02db5d840007
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 17:55:14 2020 +0900
+
+    add gem font-awesome
+
+commit 965d07ab448050d62f7630de4c3a35cd54b91da9
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 17:52:14 2020 +0900
+
+    add dir modules,change location messages.scss
+
+commit 9fbf759be88fa1a14f0899e7f808c85d1ac89ae6
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 17:51:08 2020 +0900
+
+    update application.scss
+
+commit 342a3d11a196c2db5f62e688d86e74701ed8dcc6
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 17:50:00 2020 +0900
+
+    add _messages.scss
+
+commit dcddc3a8c908ece29f0953bf3ecb07731c1f7a51
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 17:49:22 2020 +0900
+
+    rename application.css => application.scss, add _reset.scss
+
+commit e145a4735701b4d5cad7da8a203d39c21431a409
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 17:46:27 2020 +0900
+
+    Update route.rb
+
+commit 12a26a8ffeadc858c1cb7b04fb2c4850c44e62c2
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 17:43:06 2020 +0900
+
+    cmd 'rails g controller messages index'
+
+commit df3e7a229266c3abe2f201689d572cc040c33831
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 17:25:10 2020 +0900
+
+    add route.rb messages#index
+
+commit 4a326e3e7f96c5f4b49301ab6b0a8c3998c0c801
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 17:23:41 2020 +0900
+
+    cmd 'rails haml:erb2haml'
+
+commit 0449fe12f52c96dc9c4ec23c71f4e5fca6d10e39
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 17:20:26 2020 +0900
+
+    add Gemfile
+
+commit f8dbec713b719ead9d681690621479bae3f9a4ba
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 17:19:57 2020 +0900
+
+    add Gemfile haml
+
+commit bd5af0e6b9d306654dfad680c6b05c2fb410a5b2
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Thu May 28 17:16:34 2020 +0900
+
+    Update application.rb
+
+
+
+
+
+
+
+
+
+
+commit ca08a5f5e5ecb20cddb203105a95fbb0a9c488e3
+Merge: cde8f6a 525f7c8
+Author: yoyoyonoyo <65913824+yoyoyonoyo@users.noreply.github.com>
+Date:   Wed May 27 20:10:04 2020 +0900
+
+    Merge pull request #1 from yoyoyonoyo/feature-1
+    
+    READMEにDB設計を記載
+
+commit 525f7c80ff8ee5069ad0b4929381cd6497c40309
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Wed May 27 20:04:07 2020 +0900
+
+    modify README.md
+
+commit 7cb74aa3086774e4a647b1daf4c00b7f3e13bd93
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Wed May 27 19:28:24 2020 +0900
+
+    modify README.md
+
+commit bf7bb0c3a506253235f26567a0032a288c79ca87
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Wed May 27 19:18:59 2020 +0900
+
+    modify README.md
+
+commit cde8f6ab3943d2684f837fb360c90ba288bbc5a0
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Wed May 27 15:35:06 2020 +0900
+
+    add .gitignore public/uploads
+
+commit f58a5d02c5c36c045ee6fa8363f064843ee51392
+Author: yoyoyonoyo <you.itwork@gmail.com>
+Date:   Wed May 27 14:19:02 2020 +0900
+
+    initial commit
