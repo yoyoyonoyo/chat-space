@@ -29,7 +29,8 @@ a {
       justify-content: space-between;
       &__name {
         color: #ffffff;
-        font-weight: bolder;
+        font-weight: bold;
+        font-size: 16px;
       }
       &__icons {
        width: 60px;
@@ -40,12 +41,12 @@ a {
         }
         &__edit {
           color: #ffffff;
-          font-weight: bolder;
+          font-weight: bold;
           margin-right: 5px;
         }
         &__cog {
           color: #ffffff;
-          font-weight: bolder;
+          font-weight: bold;
         }
       }
     }
@@ -53,6 +54,19 @@ a {
   &__group-list {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
+    padding: 0 20px;
+    .under-items {
+      padding: 20px 0 40px ;
+      &__group-name {
+        font-size: 15px;
+        color: #ffffff;
+        margin-bottom: 5px;
+      }
+      &__group-info {
+        font-size: 11px;
+        color: #ffffff;
+      }
+    }
   }
 }
 
