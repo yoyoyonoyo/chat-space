@@ -8,6 +8,10 @@
   display: flex;
 }
 
+a {
+  text-decoration: none;
+}
+
 .side_bar {
   height: 100vh;
   width: 300px;
@@ -15,6 +19,36 @@
   &__user-name {
     height: 100px;
     background-color: #253141;
+    display: flex;
+    align-items: center;
+    .top-items {
+      height: 20px;
+      width: 260px;
+      margin: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      &__name {
+        color: #ffffff;
+        font-weight: bolder;
+      }
+      &__icons {
+       width: 60px;
+       display: flex;
+       justify-content: flex-end;
+        &__btn {
+          text-decoration: none;
+        }
+        &__edit {
+          color: #ffffff;
+          font-weight: bolder;
+          margin-right: 5px;
+        }
+        &__cog {
+          color: #ffffff;
+          font-weight: bolder;
+        }
+      }
+    }
   }
   &__group-list {
     height: calc(100vh - 100px);
