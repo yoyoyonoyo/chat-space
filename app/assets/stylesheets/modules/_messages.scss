@@ -12,11 +12,11 @@ a {
   text-decoration: none;
 }
 
-.side_bar {
+.side-bar {
   height: 100vh;
   width: 300px;
   background-color: #253141;
-  &__user-name {
+  &__top {
     height: 100px;
     background-color: #253141;
     display: flex;
@@ -36,9 +36,9 @@ a {
        width: 60px;
        display: flex;
        justify-content: flex-end;
-        &__btn {
-          text-decoration: none;
-        }
+      }
+      &__icon {
+        text-decoration: none;
         &__edit {
           color: #ffffff;
           font-weight: bold;
@@ -51,18 +51,18 @@ a {
       }
     }
   }
-  &__group-list {
+  &__bottom {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 0 20px;
-    .under-items {
+    .group-items {
       padding: 20px 0 40px ;
-      &__group-name {
+      &__name {
         font-size: 15px;
         color: #ffffff;
         margin-bottom: 5px;
       }
-      &__group-info {
+      &__info {
         font-size: 11px;
         color: #ffffff;
       }
@@ -70,7 +70,7 @@ a {
   }
 }
 
-.main_chat {
+.main-chat {
   height: 100vh;
   width: calc(100vw - 300px);
   background-color: #ffffff;
@@ -78,6 +78,38 @@ a {
     height: 100px;
     background-color: #ffffff;
     border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    &__left-box {
+      padding: 35px 0 0 40px;
+      .current_group{
+        font-size: 20px;
+        color: #333333;
+        margin-bottom: 15px;
+      }  
+      .member {
+          font-size: 12px;
+          color: #999999;
+          display: flex;
+          &__list{
+            margin-right: 5px;
+          }
+      }
+    }
+    &__right-box{
+      width: 72px;
+      display: flex;
+      align-items: center;
+      margin-right: 40px;
+        &__edit-btn {
+          height: 40px;
+          width: 72px;
+          font-size: 16px;
+          color: #38aef0;
+          border: 1px solid #38aef0;
+          padding: auto 20px;
+        }
+    }
   }
   &__message_list {
     height: calc(100vh - 100px - 90px );
