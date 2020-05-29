@@ -6,10 +6,6 @@
   display: flex;
 }
 
-a {
-  text-decoration: none;
-}
-
 .side-bar {
   height: 100vh;
   width: 300px;
@@ -123,7 +119,8 @@ a {
       display: block;
       margin-top: 28px;
       padding: 0 20px;
-      
+      text-decoration: none;
+      cursor: pointer;
     }
   }
 
@@ -183,7 +180,6 @@ a {
         
         &__image {
           height: 50px;
-          cursor: pointer;
           position: absolute;
           right: 10px;
           color: #333333;
@@ -191,6 +187,7 @@ a {
           &__icon {
             font-size: 25px;
             line-height: 50px;
+            cursor: pointer;
           }
           
           &__file {
