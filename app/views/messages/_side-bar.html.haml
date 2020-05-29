@@ -1,28 +1,28 @@
 .side-bar
-  .side-bar__top
-    .top-items
-      .top-items__name
+  .leftHeader
+    .leftHeader__items
+      .leftHeader__userName
         masa
-      %ul.top-items__icons
+      %ul.leftHeader__icons
         %li<
-          = link_to "#", class: "top-items__icon" do
-            = icon('far', 'edit', class: "top-items__icon__edit" )
+          = link_to "#", class: "leftHeader__icon" do
+            = icon('far', 'edit', class: "leftHeader__icon__edit" )
         %li<
-          = link_to "#", class: "top-items__icon" do
-            = icon('fas', 'cog', class: "top-items__icon__cog" )
-  .side-bar__bottom
-    .group-items
-      .group-items__name
+          = link_to "#", class: "leftHeader__icon" do
+            = icon('fas', 'cog', class: "leftHeader__icon__cog" )
+  .leftBar
+    .leftBar__items
+      .leftBar__groupName
         techcamp
-      .group-items__info
+      .leftBar__groupInfo
         まだメッセージがありません
-    .group-items
-      .group-items__name
+    .leftBar__items
+      .leftBar__groupName
         techcamp
-      .group-items__info
+      .leftBar__groupInfo
         まだメッセージがありません
-    .group-items
-      .group-items__name
+    .leftBar__items
+      .leftBar__groupName
         techcamp
-      .group-items__info
+      .leftBar__groupInfo
         まだメッセージがありません
