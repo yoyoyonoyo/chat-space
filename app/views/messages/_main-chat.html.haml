@@ -1,17 +1,17 @@
 .main-chat
-  .main-chat__top
-    .main-chat__top__current-group
-      .current-group__name
+  .rightHeader
+    .rightHeader__group
+      .rightHeader__groupName
         test
-      %ul.current-group__members
-        Menber
-        %li.current-group__member<
+      %ul.rightHeader__groupMembers
+        Member：
+        %li.rightHeader__groupMember<
           aaa
-        %li.current-group__member<
+        %li.rightHeader__groupMember<
           bbb
-        %li.current-group__members<
+        %li.rightHeader__groupMember<
           ccc
-      = link_to "#",class: "main-chat__group-info__edit-btn" do
-        Edit
-  .main-chat__message-list
-  .main-chat__message-form
+    = link_to "#",class: "rightHeader__edit-btn" do
+      Edit
+  .rightBody
+  .rightFooter

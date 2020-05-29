@@ -1,5 +1,3 @@
-// CSSの仕様で、paddingなどの設定を行った場合、その要素全体のサイズが大きくなってしまいます。
-// それを防ぐため、下記でbox-sizingを設定する。（defaultはcontentsーbox）
 * {
   box-sizing: border-box;
 }
@@ -16,6 +14,7 @@ a {
   height: 100vh;
   width: 300px;
   background-color: #253141;
+
   .leftHeader {
     height: 100px;
     background-color: #253141;
@@ -30,31 +29,32 @@ a {
       justify-content: space-between;
     }
 
-      &__userName {
+    &__userName {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    &__icons {
+      width: 60px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__icon {
+      text-decoration: none;
+      &__edit {
         color: #ffffff;
         font-weight: bold;
-        font-size: 16px;
+        margin-right: 5px;
       }
-
-      &__icons {
-       width: 60px;
-       display: flex;
-       justify-content: flex-end;
+      &__cog {
+        color: #ffffff;
+        font-weight: bold;
       }
-
-      &__icon {
-        text-decoration: none;
-        &__edit {
-          color: #ffffff;
-          font-weight: bold;
-          margin-right: 5px;
-        }
-        &__cog {
-          color: #ffffff;
-          font-weight: bold;
-        }
-      }
+    }
   }
+
   .leftBar {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
@@ -63,64 +63,74 @@ a {
       padding: 20px 0 40px ;
     }
 
-      &__groupName {
-        font-size: 15px;
-        color: #ffffff;
-        margin-bottom: 5px;
-      }
+    &__groupName {
+      font-size: 15px;
+      color: #ffffff;
+      margin-bottom: 5px;
+    }
 
-      &__groupInfo {
-        font-size: 11px;
-        color: #ffffff;
-      }
+    &__groupInfo {
+      font-size: 11px;
+      color: #ffffff;
+    }
   }
 }
 
-// .main-chat {
-//   height: 100vh;
-//   width: calc(100vw - 300px);
-//   background-color: #ffffff;
-//   &__current-group {
-//     height: 100px;
-//     background-color: #ffffff;
-//     border-bottom: 1px solid #eeeeee;
-//     display: flex;
-//     justify-content: space-between;
-//     &__left {
-//       padding: 35px 0 0 40px;
-//       .current-group {
-//         font-size: 20px;
-//         color: #333333;
-//         margin-bottom: 15px;
-//         &__members {
-//             font-size: 12px;
-//             color: #999999;
-//             display: flex;
-//         }
-//         &__member {
-//             margin-right: 5px;
-//         }
-//     }
-//     &__right{
-//       width: 72px;
-//       display: flex;
-//       align-items: center;
-//       margin-right: 40px;
-//         &__edit-btn {
-//           height: 40px;
-//           width: 72px;
-//           font-size: 16px;
-//           color: #38aef0;
-//           border: 1px solid #38aef0;
-//           padding: auto 20px;
-//         }
-//     }
-//   }
-//   &__message-list {
-//     height: calc(100vh - 100px - 90px );
-//     background-color: #fafafa;
-//   }
-//   &__message-form {
-//     height: 90px;
-//     background-color: #d2d2d2;
-//   }
+
+.main-chat {
+  height: 100vh;
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+  .rightHeader {
+    height: 100px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    &__group {
+      padding-top: 35px;
+    }
+
+    &__groupName {
+      font-size: 20px;
+      color: #333333;
+      margin-bottom: 15px;
+    }
+    
+    &__groupMembers {
+      font-size: 12px;
+      color: #999999;
+      display: flex;
+    }
+
+    &__groupMember {
+      margin-right: 5px;
+    }
+
+    &__edit-btn{
+      height: 40px;
+      width: 72px;
+      line-height: 40px;
+      font-size: 16px;
+      color: #38aef0;
+      border: 1px solid #38aef0;
+      display: block;
+      margin-top: 28px;
+      padding: 0 20px;
+      
+    }
+  }
+
+
+  .rightBody {
+    height: calc(100vh - 100px - 90px );
+    background-color: #fafafa;
+  }
+
+  .rightFooter {
+    height: 90px;
+    background-color: #d2d2d2;
+  }
+}
