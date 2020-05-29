@@ -5,27 +5,24 @@
         masa
       %ul.leftHeader__icons
         %li<
-          = link_to "#" do
-            = icon('far', 'edit', class: "leftHeader__icon" )
+          = link_to "#", class: "leftHeader__icon" do
+            = icon('far', 'edit',class: "leftHeader__iconEdit")
         %li<
-          = link_to "#" do
-            = icon('fas', 'cog', class: "leftHeader__icon" )
+          = link_to "#", class: "leftHeader__icon" do
+            = icon('fas', 'cog',class: "leftHeader__iconCog" )
   .leftBar
     .leftBar__items
-      .leftBar__groupName
+      = link_to "#",class: "leftBar__groupName" do
         techcamp
-      .leftBar__groupInfo
-        = link_to "#" do
-          まだメッセージがありません
+      = link_to "#",class: "leftBar__groupInfo" do
+        まだメッセージがありません
     .leftBar__items
-      .leftBar__groupName
+      = link_to "#",class: "leftBar__groupName" do
         techcamp
-      .leftBar__groupInfo
-        = link_to "#" do
-          まだメッセージがありません
+      = link_to "#",class: "leftBar__groupInfo" do
+        まだメッセージがありません
     .leftBar__items
-      .leftBar__groupName
+      = link_to "#",class: "leftBar__groupName" do
         techcamp
-      .leftBar__groupInfo
-        = link_to "#" do
-          まだメッセージがありません
+      = link_to "#",class: "leftBar__groupInfo" do
+        まだメッセージがありません

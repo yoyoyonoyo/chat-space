@@ -45,11 +45,13 @@ a {
     &__icon {
       text-decoration: none;
       color: #ffffff;
+    }
+    &__iconEdit{
       margin-right: 5px;
-      a {
-        text-decoration: none;
-        color: #ffffff;
-      }
+      font-weight: bold;
+    }
+    &__iconCog{
+      font-weight: bold;
     }
   }
 
@@ -62,18 +64,18 @@ a {
     }
 
     &__groupName {
+      display: block;
       font-size: 15px;
-      color: #ffffff;
       margin-bottom: 5px;
+      text-decoration: none;
+      color: #ffffff;
     }
 
     &__groupInfo {
+      display: block;
       font-size: 11px;
-      color: #ffffff;
-      a {
-        text-decoration: none;
-        color: #ffffff;
-      } 
+      text-decoration: none;
+      color: #ffffff; 
     }
   }
 }
@@ -160,19 +162,51 @@ a {
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-    &__Form{
-      height: 50px;
-      // width: ;
-    }
-    &__message{
-      height: 50px;
-    }
-    &__image{
+    
+    form {
+      display: flex;
 
-    }
-    &__send-btn{
-      height: 50px;
-      color: #38aef0;
+      .input-items {
+        &__form{
+          display: flex;
+          width: 100%;
+          position: relative;
+        }
+    
+        &__text {
+          height: 50px;
+          width: 100%;
+          color: #434a54;
+          border-style: none;
+          padding: 0 40px 0 10px;
+        }
+        
+        &__image {
+          height: 50px;
+          cursor: pointer;
+          position: absolute;
+          right: 10px;
+          color: #333333;
+          
+          &__icon {
+            font-size: 25px;
+            line-height: 50px;
+          }
+          
+          &__file {
+            display: none;
+          }
+        }
+        &__send-btn {
+          height: 50px ;
+          width: 100px ;
+          background-color: #38aef0;
+          padding: 0 30px;
+          margin-left: 15px;
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
     }
   }
 }

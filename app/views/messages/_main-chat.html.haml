@@ -17,7 +17,7 @@
     .rightBody__sender
       %ul.rightBody__senderLists
         %li.rightBody__senderName<
-          masa
+          masu
         %li.rightBody__senderDate<
           19XX/01/01(Wed) 04:44:44          
     .rightBody__comment
@@ -31,9 +31,10 @@
     .rightBody__comment
       私メリー、今後ろにいるの
   .rightFooter
-    .rightFooter__form
-      %form.rightFooter__input
-        %input.rightFooter__message
-        %input.rightFooter__image 
-          = icon('far', 'edit', class: "rightHeader__image" )
-      %input.rightFooter__send-btn
+    %form.input-items
+      .input-items__form
+        %input{type: "text", class: "input-items__text", placeholder: "Type a message"}
+        %label{class: "input-items__image"} 
+          = icon('far', 'image', class: "input-items__image__icon" )
+          %input{type: "file",class: "input-items__image__file"}
+      %input{type: "submit",value: "Send",class: "input-items__send-btn"}
