@@ -39,18 +39,16 @@ a {
       width: 60px;
       display: flex;
       justify-content: flex-end;
+
     }
 
     &__icon {
       text-decoration: none;
-      &__edit {
+      color: #ffffff;
+      margin-right: 5px;
+      a {
+        text-decoration: none;
         color: #ffffff;
-        font-weight: bold;
-        margin-right: 5px;
-      }
-      &__cog {
-        color: #ffffff;
-        font-weight: bold;
       }
     }
   }
@@ -72,6 +70,10 @@ a {
     &__groupInfo {
       font-size: 11px;
       color: #ffffff;
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      } 
     }
   }
 }
@@ -157,5 +159,20 @@ a {
   .rightFooter {
     height: 90px;
     background-color: #d2d2d2;
+    padding: 20px 40px;
+    &__Form{
+      height: 50px;
+      // width: ;
+    }
+    &__message{
+      height: 50px;
+    }
+    &__image{
+
+    }
+    &__send-btn{
+      height: 50px;
+      color: #38aef0;
+    }
   }
 }
