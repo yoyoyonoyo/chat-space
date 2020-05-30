@@ -1,0 +1,70 @@
+.side-bar {
+  height: 100vh;
+  width: 300px;
+  background-color: #253141;
+
+  .leftHeader {
+    height: 100px;
+    background-color: #253141;
+    display: flex;
+    align-items: center;
+
+    &__items {
+      height: 20px;
+      width: 260px;
+      margin: 0 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__userName {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    &__icons {
+      width: 60px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__icon {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    &__iconEdit{
+      margin-right: 5px;
+      font-weight: bold;
+    }
+
+    &__iconCog{
+      font-weight: bold;
+    }
+  }
+
+  .leftBar {
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 0 20px;
+    &__items {
+      padding: 20px 0 40px ;
+    }
+
+    &__groupName {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 5px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    &__groupInfo {
+      display: block;
+      font-size: 11px;
+      text-decoration: none;
+      color: #ffffff; 
+    }
+  }
+}

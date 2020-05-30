@@ -1,0 +1,131 @@
+.main-chat {
+  height: 100vh;
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+  .rightHeader {
+    height: 100px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    &__group {
+      padding-top: 35px;
+    }
+
+    &__groupName {
+      font-size: 20px;
+      color: #333333;
+      margin-bottom: 15px;
+    }
+    
+    &__groupMembers {
+      font-size: 12px;
+      color: #999999;
+      display: flex;
+    }
+
+    &__groupMember {
+      margin-right: 5px;
+    }
+
+    &__edit-btn{
+      height: 40px;
+      width: 72px;
+      line-height: 40px;
+      font-size: 16px;
+      color: #38aef0;
+      border: 1px solid #38aef0;
+      display: block;
+      margin-top: 28px;
+      padding: 0 20px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+
+  .rightBody {
+    height: calc(100vh - 100px - 90px );
+    background-color: #fafafa;
+    padding: 35px 0 0 40px;
+    &__sender{
+      margin-bottom: 12px;
+    }
+
+    &__senderLists{
+      display: flex;
+
+    }
+    &__senderName{
+      font-size: 16px;
+      color: #333333;
+      font-weight: bold;
+    }
+
+    &__senderDate{
+      font-size: 12px;
+      color: #999999;
+      padding-left: 10px;
+    }
+
+    &__comment{
+      font-size: 14px;
+      color: #434A54;
+      margin-bottom: 46px;
+    }
+  }
+
+  .rightFooter {
+    height: 90px;
+    background-color: #d2d2d2;
+    padding: 20px 40px;
+    
+    form {
+      display: flex;
+
+      .input-items {
+        &__form {
+          display: flex;
+          width: 100%;
+          position: relative;
+        }
+    
+        &__text {
+          height: 50px;
+          width: 100%;
+          color: #434a54;
+          border-style: none;
+          padding: 0 40px 0 10px;
+        }
+        
+        &__image {
+          height: 50px;
+          position: absolute;
+          right: 10px;
+          color: #333333;
+          
+          &__icon {
+            font-size: 25px;
+            line-height: 50px;
+            cursor: pointer;
+          }
+          
+          &__file {
+            display: none;
+          }
+        }
+        &__send-btn {
+          height: 50px ;
+          width: 100px ;
+          background-color: #38aef0;
+          padding: 0 30px;
+          margin-left: 15px;
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
