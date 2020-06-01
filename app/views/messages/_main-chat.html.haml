@@ -31,10 +31,10 @@
     .rightBody__comment
       私メリー、今後ろにいるの
   .rightFooter
-    %form.input-items
+    = form_with model: [@group, @message], html: {class: "input-items"}, local: true do |f|
       .input-items__form
-        %input{type: "text", class: "input-items__text", placeholder: "type a message"}
-        %label{class: "input-items__image"} 
-          = icon('far', 'image', class: "input-items__image__icon" )
-          %input{type: "file",class: "input-items__image__file"}
-      %input{type: "submit",value: "Send",class: "input-items__send-btn"}
+        = f.text_field :content, class: 'input-items__text', placeholder: 'type a message'
+        = f.label :image, class: 'input-items__image' do
+          = icon('far', 'image', class: 'input-items__image__icon')
+          = f.file_field :image, class: 'input-items__image__file'
+      = f.submit 'Send', class: 'input-items__send-btn'
