@@ -12,18 +12,10 @@
             = icon('fas', 'cog',class: "leftHeader__iconCog" )
     
   .leftBar
-    .leftBar__items
-      = link_to "#",class: "leftBar__groupName" do
-        techcamp
-      = link_to "#",class: "leftBar__groupInfo" do
-        まだメッセージがありません
-    .leftBar__items
-      = link_to "#",class: "leftBar__groupName" do
-        techcamp
-      = link_to "#",class: "leftBar__groupInfo" do
-        まだメッセージがありません
-    .leftBar__items
-      = link_to "#",class: "leftBar__groupName" do
-        techcamp
-      = link_to "#",class: "leftBar__groupInfo" do
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .leftBar__items
+      = link_to "#" do
+        .leftBar__groupName
+          = group.name
+        .leftBar__groupInfo
+          まだメッセージがありません
