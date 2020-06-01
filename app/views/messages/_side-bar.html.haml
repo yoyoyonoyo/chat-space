@@ -5,25 +5,17 @@
         = current_user.name
       %ul.leftHeader__icons
         %li<
-          = link_to "#", class: "leftHeader__icon" do
+          = link_to new_group_path, class: "leftHeader__icon" do
             = icon('far', 'edit',class: "leftHeader__iconEdit")
         %li<
           = link_to edit_user_path(current_user), class: "leftHeader__icon" do
             = icon('fas', 'cog',class: "leftHeader__iconCog" )
     
   .leftBar
-    .leftBar__items
-      = link_to "#",class: "leftBar__groupName" do
-        techcamp
-      = link_to "#",class: "leftBar__groupInfo" do
-        まだメッセージがありません
-    .leftBar__items
-      = link_to "#",class: "leftBar__groupName" do
-        techcamp
-      = link_to "#",class: "leftBar__groupInfo" do
-        まだメッセージがありません
-    .leftBar__items
-      = link_to "#",class: "leftBar__groupName" do
-        techcamp
-      = link_to "#",class: "leftBar__groupInfo" do
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .leftBar__items
+      = link_to "#" do
+        .leftBar__groupName
+          = group.name
+        .leftBar__groupInfo
+          まだメッセージがありません
