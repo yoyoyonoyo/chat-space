@@ -7,4 +7,7 @@ class User < ApplicationRecord
   # has_many :user_groups
   # has_many :groups, through: :user_groups
   # has_many :messages
+
+  has_many　:group_users
+  has_many :groups,through: :group_users
 end
