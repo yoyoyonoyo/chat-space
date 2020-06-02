@@ -48,8 +48,13 @@
 
   .rightBody {
     height: calc(100vh - 100px - 90px );
+    overflow: scroll;
     background-color: #fafafa;
     padding: 35px 0 0 40px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
     &__sender{
       margin-bottom: 12px;
     }
