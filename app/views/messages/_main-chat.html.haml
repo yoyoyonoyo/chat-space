@@ -2,39 +2,21 @@
   .rightHeader
     .rightHeader__group
       .rightHeader__groupName
-        test
+        = @group.name
       %ul.rightHeader__groupMembers
         Member：
-        %li.rightHeader__groupMember<
-          aaa
-        %li.rightHeader__groupMember<
-          bbb
-        %li.rightHeader__groupMember<
-          ccc
-    = link_to "#",class: "rightHeader__edit-btn" do
+        - @group.users.each do |user|
+          %li.rightHeader__groupMember<
+          = user.name
+    = link_to edit_group_path(@group),class: "rightHeader__edit-btn" do
       Edit
   .rightBody
-    .rightBody__sender
-      %ul.rightBody__senderLists
-        %li.rightBody__senderName<
-          masu
-        %li.rightBody__senderDate<
-          19XX/01/01(Wed) 04:44:44          
-    .rightBody__comment
-      私メリー、今後ろにいるの
-    .rightBody__sender
-      %ul.rightBody__senderLists
-        %li.rightBody__senderName<
-          masa
-        %li.rightBody__senderDate<
-          19XX/01/01(Wed) 04:44:44
-    .rightBody__comment
-      私メリー、今後ろにいるの
+    = render @messages
   .rightFooter
-    %form.input-items
+    = form_with model: [@group, @message], html: {class: "input-items"}, local: true do |f|
       .input-items__form
-        %input{type: "text", class: "input-items__text", placeholder: "type a message"}
-        %label{class: "input-items__image"} 
-          = icon('far', 'image', class: "input-items__image__icon" )
-          %input{type: "file",class: "input-items__image__file"}
-      %input{type: "submit",value: "Send",class: "input-items__send-btn"}
+        = f.text_field :body, class: 'input-items__text', placeholder: 'type a message'
+        = f.label :image, class: 'input-items__image' do
+          = icon('far', 'image', class: 'input-items__image__icon')
+          = f.file_field :image, class: 'input-items__image__file'
+      = f.submit 'Send', class: 'input-items__send-btn'

@@ -14,8 +14,8 @@
   .leftBar
     - current_user.groups.each do |group|
       .leftBar__items
-      = link_to "#" do
-        .leftBar__groupName
-          = group.name
-        .leftBar__groupInfo
-          まだメッセージがありません
+        = link_to group_messages_path(group),class: "leftBar__groupLink" do
+          .leftBar__groupName
+            = group.name
+          .leftBar__groupInfo
+            = group.show_last_message
