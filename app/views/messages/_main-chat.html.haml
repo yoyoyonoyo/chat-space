@@ -2,11 +2,12 @@
   .rightHeader
     .rightHeader__group
       .rightHeader__groupName
-        Test
+        = @group.name
       %ul.rightHeader__groupMembers
         Member：
-        %li.rightHeader__groupMember<
-          masu
+        - @group.users.each do |user|
+          %li.rightHeader__groupMember<
+          = user.name
     = link_to "#",class: "rightHeader__edit-btn" do
       Edit
   .rightBody

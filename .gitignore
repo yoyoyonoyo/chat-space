@@ -30,7 +30,7 @@
 yarn-debug.log*
 .yarn-integrity
 
-#登校画像フォルダを除く
+#投稿画像フォルダを除く
 public/uploads/*
 
 #.envを覗く
