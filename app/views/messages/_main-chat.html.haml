@@ -2,38 +2,19 @@
   .rightHeader
     .rightHeader__group
       .rightHeader__groupName
-        test
+        Test
       %ul.rightHeader__groupMembers
         Member：
         %li.rightHeader__groupMember<
-          aaa
-        %li.rightHeader__groupMember<
-          bbb
-        %li.rightHeader__groupMember<
-          ccc
+          masu
     = link_to "#",class: "rightHeader__edit-btn" do
       Edit
   .rightBody
-    .rightBody__sender
-      %ul.rightBody__senderLists
-        %li.rightBody__senderName<
-          masu
-        %li.rightBody__senderDate<
-          19XX/01/01(Wed) 04:44:44          
-    .rightBody__comment
-      私メリー、今後ろにいるの
-    .rightBody__sender
-      %ul.rightBody__senderLists
-        %li.rightBody__senderName<
-          masa
-        %li.rightBody__senderDate<
-          19XX/01/01(Wed) 04:44:44
-    .rightBody__comment
-      私メリー、今後ろにいるの
+    = render @messages
   .rightFooter
     = form_with model: [@group, @message], html: {class: "input-items"}, local: true do |f|
       .input-items__form
-        = f.text_field :content, class: 'input-items__text', placeholder: 'type a message'
+        = f.text_field :body, class: 'input-items__text', placeholder: 'type a message'
         = f.label :image, class: 'input-items__image' do
           = icon('far', 'image', class: 'input-items__image__icon')
           = f.file_field :image, class: 'input-items__image__file'
