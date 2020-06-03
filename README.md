@@ -1,5 +1,4 @@
 # README
-commit
 
 ## 1. Database設計
 ## usersテーブル
