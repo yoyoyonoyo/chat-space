@@ -26,7 +26,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   #
   # def scale(width, height)
   #   # do something
-  # end
+  # endƒ
 
   # Create different versions of your uploaded files:
   # version :thumb do
