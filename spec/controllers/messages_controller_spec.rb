@@ -22,7 +22,7 @@ describe MessagesController do
 
   #     it 'renders index' do
   #       expect(response).to render_template :index
-  #     end      
+  #     end
   #   end
 
   #   context 'not log in' do
