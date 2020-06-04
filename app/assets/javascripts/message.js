@@ -39,15 +39,12 @@ $(function(){
     })
     .done(function(message){
       let html = buildHTML(message);
-      console.log(html);
       $('.rightBody').append(html);
       $('.rightBody').animate({ scrollTop: $('.rightBody')[0].scrollHeight});
-      console.log($('.rightBody'));
       $('form')[0].reset();
-      console.log($('form'));
     })
     .fail(function(){
-      alert("エラーですぞ")
+      alert("メッセージ送信に失敗したですぞ！")
     })
     .always(function() {
       $(".input-items__send-btn").removeAttr("disabled");
