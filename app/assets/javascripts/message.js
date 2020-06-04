@@ -1,4 +1,4 @@
-$(function(){
+$('turbolinks:load', function() {
   function buildHTML(message){
     if ( message.image ) {
       let html = `<div class="rightBody__sender">
