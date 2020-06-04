@@ -29,7 +29,6 @@ $(function(){
     e.preventDefault();
     let formData = new FormData(this)
     let url = $(this).attr('action')
-    // console.log(formData)
     $.ajax({
       url: url,
       type: "POST",
@@ -42,10 +41,16 @@ $(function(){
       let html = buildHTML(message);
       console.log(html);
       $('.rightBody').append(html);
+      $('.rightBody').animate({ scrollTop: $('.rightBody')[0].scrollHeight});
+      console.log($('.rightBody'));
       $('form')[0].reset();
+      console.log($('form'));
     })
     .fail(function(){
       alert("エラーですぞ")
     })
+    .always(function() {
+      $(".input-items__send-btn").removeAttr("disabled");
+    });
   })
 });
