@@ -1,27 +1,31 @@
 $('turbolinks:load', function() {
   function buildHTML(message){
     if ( message.image ) {
-      let html = `<div class="rightBody__sender">
+      let html = `<div class="rightBody__message" data-message-id=${message.id}>
+                    <div class="rightBody__sender">
                       <ul class="rightBody__senderLists">
                         <li class="rightBody__senderName">${message.user_name}</li>
                         <li class="rightBody__senderDate">${message.created_at}</li>
                       </ul>
-                  </div>
-                  <div class="rightBody__comment">
-                    ${message.body}
-                    <img class="Message__image" src="${message.image}">
-                  </div>`
+                    </div>
+                    <div class="rightBody__comment">
+                      ${message.body}
+                      <img class="Message__image" src="${message.image}">
+                    </div>
+                  </div> `
     return html;
     } else {
-      let html = `<div class="rightBody__sender">
-                    <ul class="rightBody__senderLists">
-                      <li class="rightBody__senderName">${message.user_name}</li>
-                      <li class="rightBody__senderDate">${message.created_at}</li>
-                    </ul>
-                  </div>
-                  <div class="rightBody__comment">
-                    ${message.body}
-                  </div>`
+      let html = `<div class="rightBody__message" data-message-id=${message.id}>
+                    <div class="rightBody__sender">
+                      <ul class="rightBody__senderLists">
+                        <li class="rightBody__senderName">${message.user_name}</li>
+                        <li class="rightBody__senderDate">${message.created_at}</li>
+                      </ul>
+                    </div>
+                    <div class="rightBody__comment">
+                      ${message.body}
+                    </div>
+                  </div> `
     return html;
     };
   }
@@ -48,6 +52,6 @@ $('turbolinks:load', function() {
     })
     .always(function() {
       $(".input-items__send-btn").removeAttr("disabled");
-    });
-  })
+    })
+  });
 });
