@@ -1,6 +1,21 @@
 $(function(){
 
-  // let search_group = $(".ChatMembers");
+  let search_group = $("#UserSearchResult")
+
+  function appendUser(user){
+    let html = `<div class="ChatMember clearfix">
+                  <p class="ChatMember__name">${user.name}</p>
+                  <div class="ChatMember__add ChatMember__button" data-user-id="${user.id}" data-user-name="${user.name}">追加</div>
+                </div>`;
+  search_group.append(html);
+  }
+
+  function appendNotUser(){
+    let html = `<div class="ChatMember clearfix">
+                  <p class="ChatMember__name">ユーザーが見つかりません</p>
+                </div>`;
+  search_group.append(html);
+  }
 
   $("#UserSearch__field").on("keyup",function(){
     let input = $("#UserSearch__field").val();
@@ -12,10 +27,19 @@ $(function(){
       dataType: "json",
     })
     .done(function(users) {
-      console.log("成功です");
+      search_group.empty();
+      if (users.length !== 0) {
+        users.forEach(function(user){
+          appendUser(user);
+        });
+      } else if (input.length == 0) {
+        return false;
+      } else {
+        appendNotUser();
+      }
     })
     .fail(function() {
-      console.log("失敗です");
+      alert("ユーザ検索に失敗しました");
     });
   });
 });
