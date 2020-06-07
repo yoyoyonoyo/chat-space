@@ -1,4 +1,4 @@
-$('turbolinks:load',function() {
+$(function() {
   function buildHTML(message){
     if ( message.image ) {
       let html = `<div class="rightBody__message" data-message-id=${message.id}>
@@ -48,7 +48,7 @@ $('turbolinks:load',function() {
       }
     })
     .fail(function() {
-      alert('error');
+      alert('自動更新に失敗しました');
     });
   };
   setInterval(reloadMessages, 7000);
