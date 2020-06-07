@@ -51,5 +51,5 @@ $(function() {
       alert('自動更新に失敗しました');
     });
   };
-  setInterval(reloadMessages, 7000);
+  setInterval(reloadMessages, 4000);
 });
